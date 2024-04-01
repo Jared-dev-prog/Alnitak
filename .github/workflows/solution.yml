@@ -1,0 +1,15 @@
+name: Workflow ALNITAK
+run-name: Flujo de trabajo ALNITAK
+
+on:
+  push:
+    branches: [alnitak]
+
+jobs:
+  ALNITAK:
+    uses: JaredDevAxity/AR_26_A_ARCHERNAR_ACTIONS/.github/workflows/ALNITAK_Node.yml@main
+    with:
+      node-version: "20"
+      path-base: "."
+      service-name: "micro"
+    secrets: inherit
